@@ -4,3 +4,4 @@ dist/
 dist-transpiled/
 *.tgz
 .DS_Store
+component-library/components

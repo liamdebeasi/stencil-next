@@ -1,5 +1,8 @@
 import { Component, h } from '@stencil/core';
 
+/**
+ * @virtualProp {"ios" | "md"} mode - The mode determines which platform styles to use.
+ */
 @Component({
   tag: 'my-component',
   styleUrls: {

@@ -27,7 +27,7 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^2.13.0"
+    "@stencil/core": "^2.17.0"
   },
   "devDependencies": {
     "@stencil/react-output-target": "^0.3.1",

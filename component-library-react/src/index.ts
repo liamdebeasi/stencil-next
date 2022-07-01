@@ -1,4 +1,4 @@
-import { initialize } from 'component-library';
+import { initialize } from 'component-library/components';
 
 export * from './components';
 export const setupComponentLibrary = () => {

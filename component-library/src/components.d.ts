@@ -7,6 +7,10 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface MyComponent {
+        /**
+          * The mode determines which platform styles to use.
+         */
+        "mode"?: "ios" | "md";
     }
 }
 declare global {
@@ -22,6 +26,10 @@ declare global {
 }
 declare namespace LocalJSX {
     interface MyComponent {
+        /**
+          * The mode determines which platform styles to use.
+         */
+        "mode"?: "ios" | "md";
     }
     interface IntrinsicElements {
         "my-component": MyComponent;
