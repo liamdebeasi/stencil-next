@@ -3,3 +3,4 @@ node_modules/
 dist/
 dist-transpiled/
 *.tgz
+.DS_Store
