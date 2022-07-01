@@ -25,24 +25,25 @@ npm install && npm run dev
 
 6. Replace `next-app/src/App.tsx` with the following:
 
-```diff
- import { MyComponent } from 'component-library-react';
-+import { useEffect, useState } from 'react';
- 
- const App: React.FC = () => {
--  return <MyComponent></MyComponent>;
-+  const [render, setRender] = useState(false);
-+  
-+  useEffect(() => {
-+    setRender(true);
-+  });
-+  
-+  return (
-+    <>
-+      { render && <MyComponent></MyComponent> }
-+    </>
-+  );
- }
+```tsx
+import { MyComponent } from 'component-library-react';
+import { useEffect, useState } from 'react';
+
+const App: React.FC = () => {
+  const [render, setRender] = useState(false);
+  
+  useEffect(() => {
+    setRender(true);
+  });
+  
+  return (
+    <>
+      { render && <MyComponent></MyComponent> }
+    </>
+  );
+}
+
+export default App;
 ```
 
 7. Repeat step 5. Observe that the stylesheets are loaded for `my-component`. As the component's mode is set after the `setMode()` callback was provided.
